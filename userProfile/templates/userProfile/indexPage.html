@@ -40,12 +40,14 @@
 
  
  <div class="container">
-     <h1>Insert Name</h1>
+     <h1>{{request.user|upper}}</h1>
      <h3>Personal Profile</h3>
-     <a href="https://imgbb.com/"><img src="{% static 'profile.jpg' %}" alt="profile-picture" border="0" /></a>
+     <a href="https://imgbb.com/">
+        <!-- <img src="{% static 'profile.jpg' %}" alt="profile-picture" border="0" /> -->
+        <img src="{{profile.thumb.url}}" alt="profile-picture" border="0" /></a>
+    </a>
      <h4>About Me</h4>
-     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam accusamus nam error voluptatibus vel voluptates natus asperiores temporibus itaque? Omnis enim, veniam culpa fuga nam neque quasi sunt eaque.
-     Dolor inventore exercitationem consequatur adipisci dignissimos qui ratione illo laborum ab itaque, perferendis officiis praesentium.
+     <p>{{profile.desc}}
       </p>
      <h4>My Skills</h4>
      <div class="listFlex">

@@ -10,6 +10,10 @@ This project uses django's built-in UserCreationForm and AuthenticationForm to c
 
 ![An image of the sign-up page](static/2.png)
 
+## User Profile Page
+
+![An image of the profile page](static/4.png)
+
 ## Profile Page
 
-![An image of the profile page](static/3.png)
+![An image of the profile page](static/5.png)

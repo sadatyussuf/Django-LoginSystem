@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import indexView
+from .views import indexView, profileFormView
 
 urlpatterns = [
-    path('home/<str:username>',indexView,name='index'),
+    path('home/<int:pk>', indexView, name='index'),
+    path('profile', profileFormView, name='profile')
 ]
